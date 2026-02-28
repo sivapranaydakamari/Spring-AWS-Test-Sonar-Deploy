@@ -10,4 +10,9 @@ public class CseController {
 	public int addCSE(@RequestParam int a, @RequestParam int b) {
 		return a + b;
 	}
+	
+	@GetMapping("/getRoll")
+	public String getRoll(@RequestParam String roll) {
+		return "Hi!!!...This is done through Spring Boot by Siva(" + roll + ")";
+	}
 }

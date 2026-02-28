@@ -14,5 +14,9 @@ class CseControllerTest {
 		int result = c.addCSE(2, 3);
 		assertEquals(5, result);
 	}
-
+	@Test
+	void test2() {
+		String sen = c.getRoll("23MH1A05F5");
+		assertEquals("Hi!!!...This is done through Spring Boot by Siva(23MH1A05F5)", sen);
+	}
 }
